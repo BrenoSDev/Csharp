@@ -1,0 +1,13 @@
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\bin\Debug\netcoreapp3.1\TiposDeVariaveis.exe
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\bin\Debug\netcoreapp3.1\TiposDeVariaveis.deps.json
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\bin\Debug\netcoreapp3.1\TiposDeVariaveis.runtimeconfig.json
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\bin\Debug\netcoreapp3.1\TiposDeVariaveis.runtimeconfig.dev.json
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\bin\Debug\netcoreapp3.1\TiposDeVariaveis.dll
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\bin\Debug\netcoreapp3.1\TiposDeVariaveis.pdb
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\obj\Debug\netcoreapp3.1\TiposDeVariaveis.csproj.AssemblyReference.cache
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\obj\Debug\netcoreapp3.1\TiposDeVariaveis.AssemblyInfoInputs.cache
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\obj\Debug\netcoreapp3.1\TiposDeVariaveis.AssemblyInfo.cs
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\obj\Debug\netcoreapp3.1\TiposDeVariaveis.csproj.CoreCompileInputs.cache
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\obj\Debug\netcoreapp3.1\TiposDeVariaveis.dll
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\obj\Debug\netcoreapp3.1\TiposDeVariaveis.pdb
+C:\Users\ailto\source\repos\TiposDeVariaveis\TiposDeVariaveis\obj\Debug\netcoreapp3.1\TiposDeVariaveis.genruntimeconfig.cache
