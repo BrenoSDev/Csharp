@@ -1,0 +1,81 @@
+Lidando Com Conjuntos
+
+O método Contains da lista precisa percorrer todos os nomes cadastrados para só então devolver se o elemento está ou não dentro da lista. Dessa forma, dependendo
+do tamanho da lista, essa busca pode ficar demorada.
+Quando precisamos que a operação de busca seja rápida, utilizamos os conjuntos do C# ao invés das listas. Conjuntos são estruturas nas quais podemos fazer buscas
+rápidas e que não permitem repetição de elementos.
+Um dos tipos de conjuntos disponíveis no C# é a classe HashSet. Para buscar de maneira rápida, o HashSet "categoriza" os seus elementos, de forma a encontrá-los
+rapidamente. A categoria é dada a partir do método GetHashCode() que vem herdado da Classe Object do C#. Esse método devolve um número inteiro que representa
+qual é a categoria do objeto.
+
+*Cuidados ao sobrescrever o GetHashCode
+	Quando sobrescrevemos o método Equals de uma classe é uma boa prática também sobrescrevermos o método GetHashCode. Além disso, para que o HashSet funcione
+	corretamente, a implementação do GetHashCode deve obedecer a seguinte regra: Se tivermos dois objetos, objeto1 e objeto2, com objeto1.Equals(objeto2) 
+	devolvendo o valor true, então os métodos GetHashCode do objeto1 e do objeto2 devem devolver o mesmo valor. Ou seja, objetos iguais devem ser da mesma 
+	categoria
+
+Um detalhe interessante dos conjuntos é que você pode adicionar, remover e até mesmo verificar se um elemento está lá. Mas diferentemente da lista, você não
+consegue pegar um elemento randômico nela. Por exemplo, conjunto[10] não funciona! E isso faz sentido: não existe ordem em um conjunto.
+
+
+Conjuntos ordenados com o SortedSet
+
+Em muitas aplicações além da busca rápida, também precisamos manter a ordenação dos elementos de um conjunto. Nesse tipo de aplicação, podemos utilizar uma nova
+classe do C# chamada SortedSet.
+O SortedSet funciona de forma similar ao HashSet, utilizamos o Add para adicionar um elemento, o Remove para remover itens, o Count para perguntar quantos 
+elementos estão armazenados e Contains para verificar se um determinado elemento está no conjunto. A diferença é que no HashSet os elementos estão espalhados
+em categorias e por isso não sabemos qual é a ordem da iteração, já o SortedSet guarda os elementos na ordem crescente.
+
+
+A interface de todos os conjuntos
+
+Vimos que temos duas classes que representam conjuntos no C#, o HashSet e o SortedSet, em ambas as classes, quando queremos armazenar um elemento utilizamos o
+método Add, para remover o Remove, para buscar o Contains e para saber o número de elementos o Count, por esse motivo, existe uma interface que declara todos os
+comportamentos comuns ao conjunto que é a interface ISet.
+
+Comparação entre Listas e Conjuntos
+
+*Nas listas os elementos são armazenados na ordem de inserção enquanto cada conjunto armazena os elementos na ordem que desejar para otimizar o tempo de busca
+*Listas aceitam repetições enquanto os conjuntos não
+*Podemos acessar elementos de uma lista através de seu índice, uma operação que não faz sentido no conjunto.
+
+Como listas e conjuntos possuem muitas operações em comum, tanto as listas quanto os conjuntos implementam uma outra interface do C# chamada ICollection.
+Além disso, aprendemos que podemos utilizar o foreach com qualquer coleção do C#. Isso acontece porque o foreach aceita qualquer classe que implemente a
+interface IEnumerable, que e uma interface pai da ICollection.
+
+O método Clear elimina todos os elementos de um conjunto
+
+Buscas rápidas utilizando dicionários
+
+O Dictionary é uma classe que consegue associar uma chave a um valor. Utilizando o dicionário, podemos, por exemplo, associar o nome do titular com uma conta 
+do sistema. Quando vamos construir um dicionário dentro do código, precisamos informar qual é o tipo da chave e qual será o tipo do valor associado a essa 
+chave.
+Dictionary<String, Conta> dicionario = new Dictionary<String, Conta>();
+
+Para colocarmos um valor no dicionário, utilizamos o método Add:
+Conta conta = new Conta();
+dicionario.Add(conta.Titular.Nome, conta);
+
+Depois que inicializamos o dicionário, podemos realizar buscas de valores utilizando as chaves que foram cadastradas.
+Conta busca = dicionario["Victor"];
+
+Utilizando dicionários a busca por nomes ficou muito mais simples do que a busca utilizando o foreach, além disso, as buscas com dicionários são tão rápidas
+quanto buscas utilizandoi conjuntos.
+
+Iterando no dicionário
+
+Além de fazermos buscas rápidas, podemos também iterar nos elementos que estão armazenados, para isso também utilizamos o foreach do C#. Ao iterarmos em um 
+dicionário, o tipo utilizado dentro do foreach é um tipo que consegue guardar um par de chave associado a um valor do dicionário (KeyValuePair). Logo, no 
+código do foreach o tipo seria KeyValuePair<tipo da chave, tipo do valor>:
+Dictionary<string, Conta> dicionario = new Dictionary<string, Conta>();
+foreach(KeyValuePair<string, Conta> par in dicionario)
+{
+	string chave = par.Key; //Podemos acessar a chave atual do dicionário
+	Conta valor = par.Value; //E podemos pegar o valor associado a chave
+}
+
+Assim como no HashSet, quando iteramos em um dicionário, seus elementos não estão em nenhuma ordem em particular, logo não podemos depender da ordem dos 
+elementos do dicionário. Quando estamos trabalhando com um algoritmo que depende da ordem dos elementos, precisamos utilizar um outro tipo de dicionário 
+chamado SortedDictionary. O uso do SortedDictionary é igual ao do Dictionary, porém seus elementos estão sempre na ordem crescente das chaves do dicionário.
+No C#, temos uma interface implementada por todos os tipos de dicionários, a IDictionary, além disso, os dicionários também implementam a interface ICollection
+do C#, porém eles são coleções de KeyValuePair. 

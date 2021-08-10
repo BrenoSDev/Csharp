@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\bin\Debug\LidandoComConjuntos.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\bin\Debug\LidandoComConjuntos.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\bin\Debug\LidandoComConjuntos.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\obj\Debug\LidandoComConjuntos.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\obj\Debug\LidandoComConjuntos.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\obj\Debug\LidandoComConjuntos.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\obj\Debug\LidandoComConjuntos.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\obj\Debug\LidandoComConjuntos.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\obj\Debug\LidandoComConjuntos.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\LidandoComConjuntos\LidandoComConjuntos\obj\Debug\LidandoComConjuntos.pdb

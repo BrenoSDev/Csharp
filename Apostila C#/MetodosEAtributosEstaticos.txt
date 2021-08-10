@@ -1,0 +1,22 @@
+Métodos e atributos estáticos
+
+Muitas vezes, desejamos um atributo compartilhado entre todos os objetos da classe. Estes atributos recebem o nome de atributos da classe ou atributos estáticos
+e, em C#, para criar um atributo estático basta colocar a palavra static na declaração do atributo
+
+De maneira semelhante a um atributo estático, colocando a palavra static ao declarar um método, este se torna estático:
+public static int ProximaConta() 
+{
+	return ContaCorrente.totalDeContas + 1;
+}
+
+E para usar esse método:
+int proxima = ContaCorrente.ProximaConta();
+
+Algumas vezes criamos classes que contêm apenas métodos auxiliares estáticos. Como essas classes não possuem métodos nem propriedades de instâncias, não queremos
+permitir que elas sejam instanciadas. Nessas situações, podemos usar as classes estáticas do C#. Para criar uma classe estática, precisamos apenas utilizar a 
+palavra static em sua declaração:
+public static class Funcoes 
+{
+}
+
+Quando uma classe é declarada como estática, ela não pode ser instanciada e nem herdada e, portanto, só pode possuir membros estáticos.

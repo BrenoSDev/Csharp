@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\bin\Debug\EstruturasdeRepeticao.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\bin\Debug\EstruturasdeRepeticao.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\bin\Debug\EstruturasdeRepeticao.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\obj\Debug\EstruturasdeRepeticao.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\obj\Debug\EstruturasdeRepeticao.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\obj\Debug\EstruturasdeRepeticao.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\obj\Debug\EstruturasdeRepeticao.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\obj\Debug\EstruturasdeRepeticao.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\obj\Debug\EstruturasdeRepeticao.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasdeRepeticao\EstruturasdeRepeticao\obj\Debug\EstruturasdeRepeticao.pdb

@@ -1,0 +1,33 @@
+Exceções
+
+Para evitar esses problemas, o C# nos permite tratar essas exceções à regra de uma maneira diferente: através de exceptions. Em vez de retornarmos um valor
+dizendo se uma operação foi bem sucedida, nós lançamos uma exceção à regra padrão, ao comportamento padrão, dizendo que algo de errado aconteceu. No nosso caso,
+utilizaremos a exceção Exception, indicando que houve um erro na operação de saque:
+public class ContaPoupanca: Conta
+{
+	public override void Saca (double valor) 
+	{
+		if (valor + 0.10 > this.Saldo)
+		{
+			throw new Exception("Valor do saque maior que o saldo");
+		}
+		else 
+		{
+			this.Saldo -= valor + 0.10;
+		}
+	}
+}
+Mas, nós não queremos que o usuário receba uma mensagem de erro na tela. Então, não podemos chamar diretamente um método que pode lançar uma exceção. Ao invés 
+disso, devemos tentar chamar o método se não for lançada nenhuma exceção; caso contrário, devemos pegar a exceção e executar um trecho de código referente à
+exceção.
+Para tentar executar um trecho de código que pode lançar uma exceção, devemos colocá-la dentro de um bloco try
+E para pegar a exceção caso seja lançada e tratá-la, devemos pôr o código dentro de um block catch
+
+O C# já possui um conjunto de exceções padrão na linguagem (http://msdn.microsoft.com/pt-br/library/system.exception.apsx#inheritanceContinued. Dentre essas 
+exceções, existe a ArgumentException, que indica que o argumento de um método é inválido
+
+O bloco try deve conter toda a lógica de negócio que será executada em uma situação normal, quando não ocorrem casos excepcionais. Assim, podemos nos preocupar
+apenas com a lógica de negócios e depois nos preocupamos com os erros que aconteceram
+
+Instrução try...catch...finally
+https://docs.microsoft.com/pt-br/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement

@@ -1,0 +1,54 @@
+Apêndice-Extendendo Comportamentos através de Métodos Extras
+
+Muitas vezes usamos classes criadas por outros desenvolvedores, como por exemplo todas as classes do .NET framework. A classe string é um bom exemplo e cheia de
+métodos úteis mas quem desenhou a classe não colocou um método para transformar uma palavra em seu plural, por exemplo. Uma abordagem é a criação de um método
+estático que pode ser chamado:
+	public static class StringUtil
+	{
+		public static string Pluralize(string texto)
+		{
+			if (texto.EndsWith("s"))
+			{
+				return texto;
+			}
+			else 
+			{
+				return texto + "s";
+			}
+		}
+	}
+Agora podemos em todo lugar do nosso código fazer:
+	string bancos = StringUtil.Pluralize("banco");
+Por mais que a implementação funcione, o código fica muito feio porque toda vez precisamos invocar o método estático. Não seria possível estender a classe string
+para fazer algo como o código  a seguir?
+	String texto = "banco";
+	String plural = texto.Pluralize();
+O C# permite a criação de métodos de extensão para classes que já existem através do uso da palavra using. mas para isso devemos colocar nossa classe estática 
+dentro de um namespace e adicionar a palavra this ao primeiro parâmetro:
+	namespace MinhasExtensoes 
+	{
+		public static class StringExtensions
+		{
+			public static string Pluralize(this string texto)
+			{
+				if texto.EndsWith("s")) 
+				{
+					return texto;
+				}
+				else 
+				{
+					return texto + "s"
+				}
+			}
+		}
+	}
+Agora podemos:
+	using MinhasExtensoes;
+	
+	string texto = "banco";
+	string plural = texto.Pluralize();
+Note como, ao importar as extensões, todos os métodos estáticos de classes estáticas públicas dentro do namespace importado estarão disponíveis para serem 
+acessados como se pertencessem a classe, apesar de não pertencerem. É importante lembrar que o método só pode ser acessado caso ainda não exista um outro 
+método com o mesmo nome e tipos de parâmetros na classe. Isto é, não seria possível estender a classe string com um novo método ToString() pois ele já
+existe. Só podemos adicionar novos comportamentos.
+	

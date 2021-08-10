@@ -1,0 +1,67 @@
+Classe Object
+
+A classe Object é uma classe que representa a base para todos os objetos do sistema
+O código a seguir é o mesmo que a definição antiga de conta:
+public abstract class Conta : Object
+{
+}
+É desnecessário dizermos que Conta herda de Object. É como se o próprio compilador fizesse isso
+
+Para resolver o problema da comparação de objetos, a Microsoft introduziu na classe Object um método especializado em fazer comparação de dois objetos, o 
+método Equals. Como em toda herança a classe filha ganha os comportamentos da classe pai, podemos utilizar o Equals para fazer a comparação entre dois objetos:
+if (c1.Equals(c2))
+{
+	MessageBox.Show("Iguais")
+}
+else 
+{
+	MessageBox.Show("Diferentes")
+}
+Porém, ao executarmos o código, a aplicação ainda mostra a mensagem "diferentes". Isso ocorre porque a implementação padrão do Equals que vem herdada da classe
+Object faz a comparação das referências, ou seja, o if do código anterior faz a comparação c1 == c2. Podemos mudr o comportamento padrão do método Equals herdado
+da classe Object utilizando a sobrescrita:
+public abstract class Conta 
+{
+	public override bool Equals (Object outro)
+	{
+		Conta outraConta = (Conta) outro;
+		return this.Numero == outraConta.Numero;
+	}
+}
+
+Repare que o método Equals recebe o tipo Object. Sendo assim, podemos comparar a conta com qualquer outro objeto do sistema, por exemplo, a string:
+Conta c = new ContaCorrente();
+if (c.Equals("Mensagem"))
+E na implementação do Equals, fazemos o cast do argumento passado para o tipo Conta, porém a string não é uma conta. Como o cast é inválido, o C# lança
+uma exceção do tipo InvalidCastException. Para evitarmos essa exceção precisamos verificar que o argumento do Equals é realmente do tipo Conta antes de
+fazermos a operação de cast. Para fazer esse trabalho, podemos utilizar o operador is do C#;.
+
+Quando utilizamos o método Add, do ComboBox podemos passar qualquer objeto como argumento:
+Conta c = new ContaCorrente();
+c.Numero = 1;
+
+comboContas.Items.Add(c);
+
+Quando passamos um objeto para o método Add, o C# precisa transformar esse objeto em uma string que será exibida como item de combo box. Para isso ele utiliza
+mais um método herdado da classe Object chamado ToString. A responsabilidade desse método é transformar um objeto qualquer em uma string.
+A implementação padrão do método ToString que vem herdado da classe Object simplesmente devolve a string que representa o nome completo da classe, ou seja, 
+nome do namespace seguido do nome da classe. Mas, para mstrarmos a conta no combo box, precisamos de uma implementação que descreva a conta que o usuário está
+selecionando, então vamos novamente utilizar a sobrescrita de métodos para modificar o comportamento do ToString:
+public abstract class Conta 
+{
+	public override string ToString()
+	{
+		return "Titular: " + this.Titular.Nome;
+	}
+}
+
+Para recuperar o objeto que está selecionado em um combo box, utilizamos a propriedade SelectedItem. Essa propriedade devolve um Object que guarda a instância 
+selecionada no combobox
+
+Em algumas situações não queremos utilizar o ToString do próprio objeto para montar a lista de items do combobox, nessas situações, podemos utilizar uma propriedade
+do ComboBox chamada DisplayMember para escolher qual é a propriedade do objeto que queremos incluir como item do combo.
+Conta c = new ContaCorrente() {Numero = 1};
+Conta c2 = new ContaCorrente() {Numero = 2};
+comboContas.Items.Add(c);
+comboContas.Items.Add(c2);
+comboContas.DisplayMember = "Numero";

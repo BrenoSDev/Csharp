@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\bin\Debug\EncapsulamentoEModificadoresDeAcesso.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\bin\Debug\EncapsulamentoEModificadoresDeAcesso.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\bin\Debug\EncapsulamentoEModificadoresDeAcesso.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\obj\Debug\EncapsulamentoEModificadoresDeAcesso.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\obj\Debug\EncapsulamentoEModificadoresDeAcesso.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\obj\Debug\EncapsulamentoEModificadoresDeAcesso.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\obj\Debug\EncapsulamentoEModificadoresDeAcesso.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\obj\Debug\EncapsulamentoEModificadoresDeAcesso.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\obj\Debug\EncapsulamentoEModificadoresDeAcesso.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EncapsulamentoEModificadoresDeAcesso\EncapsulamentoEModificadoresDeAcesso\obj\Debug\EncapsulamentoEModificadoresDeAcesso.pdb

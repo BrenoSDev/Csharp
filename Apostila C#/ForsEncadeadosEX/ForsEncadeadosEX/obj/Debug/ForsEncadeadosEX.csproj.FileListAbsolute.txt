@@ -1,0 +1,7 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ForsEncadeadosEX\ForsEncadeadosEX\bin\Debug\ForsEncadeadosEX.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ForsEncadeadosEX\ForsEncadeadosEX\bin\Debug\ForsEncadeadosEX.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ForsEncadeadosEX\ForsEncadeadosEX\bin\Debug\ForsEncadeadosEX.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ForsEncadeadosEX\ForsEncadeadosEX\obj\Debug\ForsEncadeadosEX.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ForsEncadeadosEX\ForsEncadeadosEX\obj\Debug\ForsEncadeadosEX.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ForsEncadeadosEX\ForsEncadeadosEX\obj\Debug\ForsEncadeadosEX.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ForsEncadeadosEX\ForsEncadeadosEX\obj\Debug\ForsEncadeadosEX.pdb

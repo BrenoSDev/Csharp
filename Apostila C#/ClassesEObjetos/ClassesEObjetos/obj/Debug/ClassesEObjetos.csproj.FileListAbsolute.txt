@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\bin\Debug\ClassesEObjetos.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\bin\Debug\ClassesEObjetos.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\bin\Debug\ClassesEObjetos.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\obj\Debug\ClassesEObjetos.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\obj\Debug\ClassesEObjetos.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\obj\Debug\ClassesEObjetos.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\obj\Debug\ClassesEObjetos.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\obj\Debug\ClassesEObjetos.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\obj\Debug\ClassesEObjetos.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ClassesEObjetos\ClassesEObjetos\obj\Debug\ClassesEObjetos.pdb

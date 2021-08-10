@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\bin\Debug\VariaveisETiposPrimitivos.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\bin\Debug\VariaveisETiposPrimitivos.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\bin\Debug\VariaveisETiposPrimitivos.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\obj\Debug\VariaveisETiposPrimitivos.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\obj\Debug\VariaveisETiposPrimitivos.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\obj\Debug\VariaveisETiposPrimitivos.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\obj\Debug\VariaveisETiposPrimitivos.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\obj\Debug\VariaveisETiposPrimitivos.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\obj\Debug\VariaveisETiposPrimitivos.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\VariaveisETiposPrimitivos\VariaveisETiposPrimitivos\obj\Debug\VariaveisETiposPrimitivos.pdb

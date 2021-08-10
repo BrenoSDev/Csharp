@@ -1,0 +1,52 @@
+Namespaces
+
+O grande problema que surge com sistemas grandes é a organização de todas as suas classes. Para evitar que o sistema fique caótico, podemos agrupar as classes 
+por características comuns e dar um nome para cada um desses grupos. Isto é, agruparíamos um conjunto de classes em um espaço em comum e lhe daríamos um nome.
+Esse espaço definido por um nome é chamado de namespace.
+Segundo a convenção de nomes adotada pela Microsoft, os namespaces devem ter a forma: NomeDaEmpresa.NomeDoProjeto.ModuloDoSistema
+
+O nome completo de uma classe agora envolve adicionar uma referência ao namespace dela. Por isso, deixamos de acessar Gerente diretamente e passamos a acessar
+Caelum.Banco.Usuarios.Gerente
+Um exemplo de código já existente na plataforma C# que usa namespaces envolve imprimir uma ´única linha no console usando o método WriteLine de System.Console:
+System.Console.WriteLine("Minha conta bancária");
+
+Note como o uso de namespaces para organizar suas classes acaba implicando em mais código na hora de utilizar as mesmas. Por isso, podemos criar atalhos ao dizer
+que usaremos as classes que pertencem a um namespace. Por exemplo, podemos citar que usaremos o namespace System e, a partir de então, podemos escrever nosso
+código como se tudo o que está dentro do namespace System estivesse no mesmo namespace em que estamos
+
+using System;
+Console.WriteLine("Minha conta bancária");
+
+A utilização da palavra chave using permite notificar ao compilador que usaremos classes daquele namespace. Com isso, obtemos a vantagem da organização do código
+através de namespace e continuamos com um código enxuto.
+
+No C#, podemos criar um namespace dentro de outro namespace já existente.
+
+Em aplicações grandes, podemos ter namespaces com nomes muitos grandes, por exemplo:
+namespace Caelum.Banco.Produtos.Contas 
+{
+}
+
+Vimos que, no código C#, podemos utilizar o using para não digitarmos o nome completo da classe toda vez que ela for utilizada, mas o que aconteceria se tivéssemos
+outra classe Conta? Claramente, as classes são diferentes pois possuem namespaces diferentes, mas no código que as utiliza, não podemos importar as duas classes
+pois o compilador do C# não saberá qual das duas estamos utilizando. Nessa situação, podemos dar um apelido (alias) menor para um namespace do C# com a palavra 
+using:
+using Caelum.Banco.Produtos.Contas;
+using SegurancaDoBanco = Caelum.Banco.Seguranca;
+
+namespace Banco.Sistema
+{
+	public class ControleAutenticacao
+	{
+		public void Autentica (SegurancaDoBanco.Conta contaUsuario)
+		{
+		}
+	}
+}
+
+Podemos também definir um alias para uma classe do namespace:
+using Caelum.Banco.Produtos.Contas;
+using ContaDoUsuario = Caelum.Banco.Seguranca.Conta;
+
+Mesmo que a estrutura de diretórios seja completamente separada do namespace, é sempre bom definirmos regras para a estrutura de pastas do projeto. Uma estrutura
+muito utilizada no .Net é colocar todas as classes de um determinado namespace dentro de um diretório com o mesmo nome do namespace

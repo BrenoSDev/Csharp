@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\TrabalhandoComArrays.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\TrabalhandoComArrays.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\TrabalhandoComArrays.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\TrabalhandoComArrays.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\TrabalhandoComArrays.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\TrabalhandoComArrays.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\TrabalhandoComArrays.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\TrabalhandoComArrays.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\TrabalhandoComArrays.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\TrabalhandoComArrays.pdb

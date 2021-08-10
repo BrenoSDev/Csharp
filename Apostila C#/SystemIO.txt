@@ -1,0 +1,138 @@
+System.IO
+
+*Leitura de arquivos
+A entrada de dados no C# funciona em duas etapas. Na primeira etapa, temos uma classe abstrata que representa uma sequência de bytes na qual podemos realizar
+operações de leitura e escrita. Essa classe abstrata é chamada de Stream.
+Como o Stream é uma classe abstrata, não podemos usá-la diretamente, precisamos de uma implementação para essa classe. No caso de leitura ou escrita em arquivos,
+utilizamos um tipo de Stream chamado FileStream, que pode ser obtido através do método estático Open da classe File. Quando utilizamos o Open, devemos passar
+o nome do arquivo que será aberto e devemos informá-lo o que queremos fazer com o arquivo (ler ou escrever).
+Para abrirmos o arquivo entrada.txt para leitura, utilizamos o código a seguir:
+	Stream entrada = File.Open("entrada.txt", FileModeOpen);
+Agora que temos o Stream, podemos ler seu próximo byte utilizando o método ReadByte.
+	byte b = entrada.ReadByte();
+Porém, trabalhar com bytes não é fácil, queremos trabalhar com textos! Portanto vamos utilizar a segunda parte da leitura. Para facilitar a leitura de Streams,
+o C# nos oferece uma classe chamada StreamReader, responsável por ler caracteres ou strings de um Stream. O StreamReader precisa saber qual é a Stream que será
+lida, portanto passaremos essa informação através de seu construtor:
+	StreamReader leitor = new StreamReader(entrada);
+Para ler uma linha do arquivo, utilizamos o método ReadLine do StreamReader:
+	string linha = leitor.ReadLine();
+Enquanto o arquivo não terminar, o método ReadLine() devolve um valor diferente de nulo, portanto, podemos ler todas as linhas de um arquivo com o seguinte 
+código:
+	string linha = leitor.ReadLine();
+	while(linha != null) 
+	{
+		MessageBox.Show(linha);
+		linha = leitor.ReadLine();
+	}
+Assim que terminamos de trabalhar com o arquivo, devemos sempre lembrar de fechar o Stream e o StreamReader:
+	leitor.Close();
+	entrada.Close();
+
+O código completo para ler um arquivo fica da seguinte forma: 
+	Stream entrada = File.Open("entrada.txt", FileMode.Open);
+	StreamReader leitor = new StreamReader(entrada);
+	string linha = leitor.ReadLine();
+	while (linha != null) 
+	{
+		MessageBox.Show(linha);
+		linha = leitor.ReadLine();
+	}
+	leitor.Close();
+	entrada.Close();
+Porém, o arquivo pode não existir e, nesse caso, o C# lança a FileNotFoundException. Devemos, portanto, verificar se o arquivo existe antes de abri-lo para 
+leitura. Podemos verificar se um arquivo existe utilizando o método Exists da classe File:
+	if (File.Exists("entrada.txt"))
+	{
+	}
+
+*Lendo todo o conteúdo de um arquivo
+Vimos que para ler todas as linhas de um arquivo, precisamos utilizar o método ReadLine até que o retorno seja o valor null, mas isso é trabalhoso.
+Ao invés de chamar o método ReadLine para cada linha, podemos utilizar o método ReadToEnd da classe StreamReader. Esse método devolve uma string com
+todo o conteúdo do arquivo.
+
+*Escrevendo em Arquivos
+Assim como a leitura, a escrita também acontece em duas etapas. Na primeira etapa, trabalhamos novamente escrevendo bytes para a saída. Para isso utilizaremos
+novamente a classe abstrata Stream.
+Para escrevermos em um arquivo, precisamos primeiro abri-lo em modo de escrita utilizando o método Open do File passando o modo FileMode.Create:
+	Stream saida = File.Open("saida.txt", FileMode.Create);
+Porém, não queremos trabalhar com Bytes, então utilizaremos uma classe especializada em escrever em um Stream chamada StreamWriter.
+	StreamWriter escritor = new StreamWrite(saida);
+Podemos escrever uma linha com o StreamWriter utilizando o método WriteLine:
+	escritor.WriteLine("Minha mensagem");
+Depois que terminamos de utilizar o arquivo, precisamos fechar todos os recursos:
+	escritor.Close();
+	saida.Close();
+	
+O código completo para escrever no arquivo fica da seguinte forma:
+	Stream saida = File.Open("saida.txt", FileMode.Create);
+	StreamWriter escritor = new StreamWriter(saida);
+	escritor.WriteLine("Minha mensagem");
+	escritor.Close();
+	saida.Close();
+
+*Onde os arquivos são gravados
+	Quando passamos apenas o nome do arquivo no código do File.Open, o C# procura esse arquivo dentro da pasta em que a aplicação é executada. No caso de 
+	executarmos a aplicação pelo Visual Studio, a pasta utilizada pela aplicação será a pasta em que o projeto foi criado.
+
+*Gerenciando os arquivos com o using
+Toda vez que abrimos um arquivo dentro de um programa C#, precisamos fechá-lo utilizando o método Close. Devemos garantir que o Close será executado mesmo 
+quando o código lança uma exceção durante sua execução, para isso podemos utilizar o bloco finally:
+	Stream arquivo = null;
+	StreamReader leitor = null;
+	try 
+	{
+		arquivo = File.Open("arquivo.txt", FileMode.Open);
+		leitor = new StreamReader(arquivo);
+		//utiliza o arquivo 
+	}
+	catch (Exception ex) 
+	{
+		//Executa o tratamento do erro que aconteceu
+	}
+	finally 
+	{
+		//Fecha o arquivo e o leitor
+		//Antes de fecharmos, precisamos verificar que o arquivo e o leitor foram realmente criados com sucesso
+		if (leitor != null) 
+		{
+			leitor.Close();
+		}
+		if (arquivo != null) 
+		{
+			arquivo.Close();
+		}
+	}
+	
+Veja que o código para lidar corretamente com os arquivos pode ficar muito complicado. Ao invés de cuidarmos manualmente dos arquivos, podemos pedir para a
+linguagem C# cuidar do gerenciamento utilizando o bloco using. Dentro de um bloco using podemos instanciar um recurso que queremos que seja gerenciado pelo 
+C#, como por exemplo um arquivo:
+	using (Stream arquivo = File.Open("arquivo.txt", FileMode.Open))
+	{
+		//O arquivo só fica aberto dentro desse bloco
+	}
+Também podemos utilizar o using para gerenciar o StreamReader:
+	using (Stream arquivo = File.Open("arquivo.txt", FileMode.Open))
+	using (StreamReader leitor = new StreamReader(arquivo))
+	{
+		//Aqui dentro você pode utilizar tanto o leitor quanto o arquivo
+	}
+
+O using automaticamente fecha os arquivos utilizados dentro do bloco mesmo quando uma exceção é lançada pelo código.
+Podemos utilizar o bloco using para gerenciar qualquer classe que implemente a interface IDisposable do C#.
+
+*Onde colocar os arquivos da aplicação
+Precisamos tomar muito cuidado ao escrever programas que guardam informações dentro de arquivos. Como dito anteriormente, quando utilizamos o File.Open, o
+C# procura o arquivo na pasta em que a aplicação está sendo executada, porém muitas vezes os programas escritos são instalados  em pastas do sistema 
+operacional, por exemplo C:/Arquivos de Programas, nesse caso o programa tentará escrever as informações dentro de uma pasta do sistema operacional e por
+isso, ele só pode ser executado por um administrador do sistema.
+Quando queremos recuperar o caminho para uma pasta especial do sistema operacional, podemos utilizar uma classe do C# chamada Environment do namespace System.
+Nessa classe, podemos invocar o método GetFolderPath para recuperar o caminho para uma pasta do sistema. O método GetFolderPath recebe como argumento uma
+constante que indica qual é a pasta que queremos. Para recuperarmos o caminho para a pasta de documentos do usuário logado, podemos utilizar o seguinte 
+código:
+	string pastaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+Os outros valores aceitos pelo método GetFolderPath podem ser encontrados nessa página: http://msdn.microsoft.com/en-us/library/system.environment.specialfolder.aspx
+
+Agora se quisermos abrir um arquivo chamado entrada.txt dentro da pasta de documentos, precisamos combinar o caminho da pasta com o nome do arquivo. Para 
+resolver esse problema, utilizamos o método Combine da classe Path da namespace System.IO:
+	string pastaDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+	string caminhoArquivo = Path.Combine(pastaDocumentos, "entrada.txt");

@@ -1,0 +1,122 @@
+LINQ E LAMBDA
+
+*Filtros utilizando o LINQ
+
+Para filtrar uma lista, seria muito mais interessante que a própria coleção tivesse algum método que recebesse a condição que queremos aplicar nesse filtro e já
+implementasse a lógica do foreach. Mas como passar a condição para esse filtro? Teríamos que enviar um bloco de código que aceita ou rejeita os valores da coleção.
+Para passar um bloco de código que pode ser utilizado por um método, o C# introduziu as funções anônimas ou lambdas. As funções anônimas funcionam como métodos
+estáticos da linguagem com uma declaração simplificada.Para declarar uma função anônima que recebe um argumento do tipo Conta utilizamos o seguinte código:
+
+(Conta c) => { //Implementação da função anônima}
+
+Para buscarmos todas as contas que têm um saldo maior do que 2000, utilizaríamos o método Where:
+
+var filtradas = contas.Where((Conta c) => {return c.Saldo > 2000; });
+
+A biblioteca do C# que define o método Where é chamada LINQ, a Language Integrated Query.
+
+*Simplificando a Declaração do LAMBDA
+Veja que, no código do lambda que passamos como argumento para o Where, definimos que o argumento da função anônima é do tipo Conta porque a lista da variável
+contas é do tipo Conta. Repare que o tipo do argumento do lambda na verdade é redundante e por isso, desnecessário:
+
+var filtradas = contas.Where(c => {return c.Saldo > 2000;});
+
+Além disso, quando declaramos uma função anônima que tem apenas uma linha que devolve um valor, podemos remover inclusive as chaves e o return da declaração do
+lambda:
+
+var filtradas = contas.Where(c => c.Saldo > 2000 );
+
+*Outros métodos do LINQ
+Quando queremos fazer a soma dos elementos de uma lista, podemos utilizar o método Sum do LINQ, passando um lambda que fala qual é a propriedade da conta que
+queremos somar:
+
+double saldoTotal = contas.Sum(c=>c.Saldo);
+
+Além do Sum, também podemos utilizar o método Average para calcular a média dos valores, Count para contar o número de valores que obedecem algum critério,
+Min para calcular o menor valor e Max para calcular o maior valor:
+
+//Média do saldo das contas
+double mediaDosSaldos = contas.Average(c => c.Saldo);
+
+//Número de contas que possuem Numero menor que 1000
+int numero = contas.Count(c => c.Numero < 1000);
+
+int menorNumero = contas.Min(c => c.Numero);
+double maiorSaldo = contas.Max(c => c.Saldo);
+
+Quando utilizamos esses métodos de agregação em uma lista com tipos primitivos, o lambda é um argumento opcional. Por exemplo, se tivéssemos uma lista de double,
+poderíamos utilizar o seguinte código para calcular a média dos números:
+
+List<double> saldos;
+double media = saldos.Average();
+
+*Utilizando o LINQ com outros tipos
+O LINQ, além de trabalhar com listas, também pode ser utilizado com outros tipos de coleções, podemos usar o LINQ com qualquer objeto que implemente a interface 
+IEnumerable, ou seja, ele pode ser utilizado com qualquer objeto que possa ser passado para a instrução foreach. Isso inclui todos os tipos de coleções (Listas,
+conjuntos e dicionários) e arrays.
+
+*Melhorando as buscas utilizando a sintaxe de queries
+Vimos que utilizando o LINQ podemos fazer filtros e agregações de uma forma fácil em qualquer coleção do C#, porém quando precisamos fazer um filtro complexo,
+o lambda pode ficar com um código complexo. E por isso, a Microsoft decidiu facilitar ainda mais o uso do LINQ.
+Para implementarmos um filtro, em vez de utilizarmos o método Where, podemos utilizar uma sintaxe que foi baseada na linguagem de busca em banco de dados, a SQL.
+Para começarmos um filtro utilizando essa nova sintaxe, precisamos começar o filtro com a palavra from criando uma variável que será utilizada para navegar na
+lista e para colocarmos uma condição nesse filtro, utilizamos a palavra where passando qual é a condição a que a conta deve obedecer para aparecer como resultado
+desse filtro, e por fim, precisamos apenas informar o que será selecionado utilizando o select:
+
+var filtradas = from c in contas
+				where c.Numero < 2000
+				select c;
+				
+Quando o compilador da linguagem C# encontra o filtro que definimos, esse código é convertido para uma chamada para o método Where que vimos anteriormente. Essa 
+nova sintaxe é apenas um jeito de esconder a complexidade do lambda.
+
+*Projeções e Objetos anônimos
+Muitas vezes, quando estamos usando o LINQ, o filtro não precisa retornar todas as informações dos objetos da lista que está sendo processada. Podemos estar 
+interessados em buscar apenas o número das contas que obedecem os critérios da busca, para isso precisamos apenas mudar o select do LINQ.
+
+var resultado = from c in contas where <condição da busca> select c.Numero;
+
+Mas e quando queremos devolver mais atributos da conta? Como no LINQ podemos apenas devolver um objeto como resultado da query, teríamos que criar uma classe que
+contém os atributos que serão devolvidos pela query, mas muitas vezes nós fazemos a busca e utilizamos o resultado dentro de um único ponto da aplicação. Nesses
+casos, podemos deixar o compilador do C# cuidar da criação desse objeto anônimo:
+
+var resultado = from c in contas
+				where <condição da busca>
+				select new { c.Numero, c.Titular };
+
+Nesse código, o compilador do C# cria um novo tipo que será utilizado para guardar o resultado da busca. Esse tipo não possui um nome dentro do código e por isso
+o objeto devolvido é chamado de Objeto Anônimo. Quando utilizamos o objeto anônimo no LINQ, somos forçados a utilizar a interferência de tipos (palavra var).
+
+*Ordenando coleções com LINQ
+Além de fazermos buscas e projeções, podemos também utilizar o LINQ para ordenar coleções de elementos. Para isso precisamos apenas colocar um orderby dentro da 
+query. Por exemplo, para buscarmos todas as contas com saldo maior do que 10000 ordenadas pelo nome do titular, utilizamos o seguinte código:
+
+var resultado = from c in contas
+				where c.Saldo > 10000
+				orderby c.Titular.Nome
+				select c;
+				
+Com isso temos uma lista de contas ordenadas pelo nome do titular de forma ascendente (alfabética). Assim como podemos fazer a ordenação ascendente, também 
+podemos fazer a ordenação descendente utilizando a palavra descending:
+
+var resultado = from c in contas
+				where c.Saldo > 10000
+				orderby c.Titular.Nome descending
+				select c;
+				
+Mas e se tivermos dois titulares com exatamente o mesmo nome? Nesse caso, podemos definir um segundo critério para desempatar a ordenação. Cada um dos critérios
+da ordenação fica separado por vírgula no orderby.
+Assim como no caso do filtro, as ordenações do LINQ também são traduzidas para chamadas de método pelo compilador do C#. Quando colocamos um orderby na busca,
+o compilador chama o método OrderBy (ou OrderByDescending no caso de uma ordenação decrescente). A query com o filtro e a ordenação pelo titular fica da seguinte
+forma:
+
+var resultado = contas
+					.Where(c => c.Saldo > 10000)
+					.OrderBy(c => c.Titular.Nome);
+
+Quando colocamos uma ordenação secundária, o compilador do C# chama o método ThenBy (ou ThenByDescending no caso de uma ordenação secundária descendente):
+
+var resultado = contas
+					.Where (c => c.Saldo > 10000)
+					.OrderBy(c => c.Titular.Nome)
+					.ThenBy(c => c.Numero);

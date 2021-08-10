@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\bin\Debug\EstruturasDeControle.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\bin\Debug\EstruturasDeControle.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\bin\Debug\EstruturasDeControle.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.pdb

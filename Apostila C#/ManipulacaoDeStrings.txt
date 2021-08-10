@@ -1,0 +1,43 @@
+Manipulação de strings
+
+Em C# textos são representados por objetos do tipo string.
+Podemos juntar duas strings:
+	string titulo = "Arquitetura" + " e " + "Design de Software";
+	titulo += " ! " //Concatena a ! no fim  do texto
+Usando a concatenação, podemos inserir o valor de qualquer variável no meio de nosso texto:
+	int idade = 42;
+	MessageBox.Show("A idade atual é " + idade);
+Mas ficar concatenando strings nem sempre é fácil, principalmente se temos muitos valores. Podemos usar uma alternativa, fazendo o próprio C# fazer essa
+concatenação por nós. Para isso, basta indicar na string a posição que quer inserir a variável usando a sintaxe {posicao}, e passar o valor correspondente em
+ordem:
+	string nome = "Guilherme";
+	int idade = 42;
+	Console.WriteLine("Olá {0}, a sua idade é {1}", nome, idade);
+Caso precisemos armazenar a string já concatenada em uma variável ao invés de a imprimir, basta usar o método Format:
+	string nome = "Guilherme";
+	int idade = 42;
+	string txt = string.Format("Olá {0}, a sua idade é {1}", nome, idade);
+	MessageBox.Show(txt);
+Imagine que temos uma linha de texto que separa os dados de um usuário do sistema através de vírgulas. Como separar cada uma das partes através da , ? A classe
+String conta também com um método Split, que divide a String em um array de Strings, dado determinado caractere como critério:
+	string texto = "guilherme silveira,42,são paulo,brasil";
+	string[] colunas = texto.Split(',');
+Sempre que chamamos um método em um objeto String, um novo objeto é criado e retornado pelo método, mas o original nunca é modificado. Strings são imutáveis.
+Podemos usar o método ToUpper() para transformar todas as letras em maiúsculas:
+	string curso = "fn13";
+	MessageBox.Show(curso.ToUpper());
+Podemos substituir parte do conteúdo de uma String, usando o método Replace:
+	string curso = "fn13";
+	curso = curso.ToUpper();
+	curso = curso.Replace("1", "2");
+	MessageBox.Show(curso); //Imprime FN23
+Podemos concatenar as invocações de método, já que uma string é devolvida a cada invocação:
+	string curso = "fn13";
+	curso = curso.ToUpper().Replace("1", "2");
+Às vezes precisamos quebrar nossos textos em partes menores com base na quantidade de caracteres, ou ainda, encontrar a posição de um caractere específico
+dentro de nossa string:
+	string nomeCompleto = "guilherme silveira";
+	string nome = nomeCompleto.Substring(0, 9);
+E para buscar o caractere espaço dentro de uma string:
+	int posicaoDoEspaco = nomeCompleto.IndexOf(" ");
+	MessageBox.Show(posicaoDoEspaco); //imprime 8

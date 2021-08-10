@@ -1,0 +1,7 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ConsoleIOSteps\ConsoleIOSteps\bin\Debug\ConsoleIOSteps.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ConsoleIOSteps\ConsoleIOSteps\bin\Debug\ConsoleIOSteps.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ConsoleIOSteps\ConsoleIOSteps\bin\Debug\ConsoleIOSteps.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ConsoleIOSteps\ConsoleIOSteps\obj\Debug\ConsoleIOSteps.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ConsoleIOSteps\ConsoleIOSteps\obj\Debug\ConsoleIOSteps.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ConsoleIOSteps\ConsoleIOSteps\obj\Debug\ConsoleIOSteps.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\ConsoleIOSteps\ConsoleIOSteps\obj\Debug\ConsoleIOSteps.pdb

@@ -1,0 +1,36 @@
+Trabalhando Com Listas
+
+Para resolver os problemas do array, podemos trabalhar com uma classe do C# chamada List. Para utilizarmos uma lista dentro do código precisamos informar qual
+é o tipo de elemento que a lista armazenará:
+List<Conta> lista = new List<Conta>();
+
+Da mesma forma que criamos a lista de contas, também poderíamos criar uma lista de números inteiros ou de qualquer outro tipo do C#. Essa lista do C# armazena
+seus elementos dentro de um array.
+
+Podemos utilizar o método Add para armazenar novos elementos na lista:
+Conta c1 = new ContaCorrente();
+Conta c2 = new ContaPoupanca();
+Conta c3 = new ContaCorrente();
+
+lista.Add(c1); //Fica na posição 0
+lista.Add(c2); //Fica na posição 1
+lista.Add(c3); //Fica na posição 2
+
+Se quisermos pegar uma Conta, podemos acessá-la pela sua posição 
+
+Se quisermos remover uma das contas da lista, podemos usar o método Remove ou RemoveAt
+lista.Remove(c2); //Remove pelo elemento
+lista.RemoveAt(0); //Remove pelo índice
+
+Se quisermos saber quantos elementos existem em nosso List, podemos simplesmente ler a propriedade Count:
+int qtdDeElementos = lista.Count;
+
+Também podemos descobrir se um elemento está dentro de uma lista:
+bool temC1 = lista.Contains(c1);
+bool temC2 = lista.Contains(c2);
+
+Um outro recurso que a classe List nos fornece é a iteração em cada um dos seus elementos:
+foreach (Conta c in lista) 
+{
+	MessageBox.Show(c.ToString());
+}

@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\ailto\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ailto\\.nuget\\packages"
-    ]
-  }
-}

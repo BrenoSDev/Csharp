@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\obj\Debug\Excecoes.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\obj\Debug\Excecoes.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\obj\Debug\Excecoes.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\obj\Debug\Excecoes.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\obj\Debug\Excecoes.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\bin\Debug\Excecoes.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\bin\Debug\Excecoes.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\bin\Debug\Excecoes.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\obj\Debug\Excecoes.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\Excecoes\Excecoes\obj\Debug\Excecoes.pdb

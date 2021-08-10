@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.exe.config
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.pdb
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.exe
+C:\Users\ailto\Documents\Programação\C#\Apostila C#\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.pdb
