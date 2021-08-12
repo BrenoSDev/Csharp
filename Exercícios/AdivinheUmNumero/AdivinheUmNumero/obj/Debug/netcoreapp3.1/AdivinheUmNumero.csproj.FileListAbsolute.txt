@@ -1,0 +1,13 @@
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\bin\Debug\netcoreapp3.1\AdivinheUmNumero.exe
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\bin\Debug\netcoreapp3.1\AdivinheUmNumero.deps.json
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\bin\Debug\netcoreapp3.1\AdivinheUmNumero.runtimeconfig.json
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\bin\Debug\netcoreapp3.1\AdivinheUmNumero.runtimeconfig.dev.json
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\bin\Debug\netcoreapp3.1\AdivinheUmNumero.dll
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\bin\Debug\netcoreapp3.1\AdivinheUmNumero.pdb
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\obj\Debug\netcoreapp3.1\AdivinheUmNumero.AssemblyInfoInputs.cache
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\obj\Debug\netcoreapp3.1\AdivinheUmNumero.AssemblyInfo.cs
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\obj\Debug\netcoreapp3.1\AdivinheUmNumero.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\obj\Debug\netcoreapp3.1\AdivinheUmNumero.dll
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\obj\Debug\netcoreapp3.1\AdivinheUmNumero.pdb
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\obj\Debug\netcoreapp3.1\AdivinheUmNumero.genruntimeconfig.cache
+C:\Users\ailto\Documents\Programação\C#\AdivinheUmNumero\AdivinheUmNumero\obj\Debug\netcoreapp3.1\AdivinheUmNumero.csproj.AssemblyReference.cache

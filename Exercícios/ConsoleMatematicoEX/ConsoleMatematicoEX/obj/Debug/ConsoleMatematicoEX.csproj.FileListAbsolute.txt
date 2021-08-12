@@ -1,0 +1,7 @@
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleMatematicoEX\ConsoleMatematicoEX\bin\Debug\ConsoleMatematicoEX.exe.config
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleMatematicoEX\ConsoleMatematicoEX\bin\Debug\ConsoleMatematicoEX.exe
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleMatematicoEX\ConsoleMatematicoEX\bin\Debug\ConsoleMatematicoEX.pdb
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleMatematicoEX\ConsoleMatematicoEX\obj\Debug\ConsoleMatematicoEX.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleMatematicoEX\ConsoleMatematicoEX\obj\Debug\ConsoleMatematicoEX.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleMatematicoEX\ConsoleMatematicoEX\obj\Debug\ConsoleMatematicoEX.exe
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleMatematicoEX\ConsoleMatematicoEX\obj\Debug\ConsoleMatematicoEX.pdb
