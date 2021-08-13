@@ -1,0 +1,7 @@
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleExercises01\ConsoleExercises01\bin\Debug\ConsoleExercises01.exe.config
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleExercises01\ConsoleExercises01\bin\Debug\ConsoleExercises01.exe
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleExercises01\ConsoleExercises01\bin\Debug\ConsoleExercises01.pdb
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleExercises01\ConsoleExercises01\obj\Debug\ConsoleExercises01.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleExercises01\ConsoleExercises01\obj\Debug\ConsoleExercises01.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleExercises01\ConsoleExercises01\obj\Debug\ConsoleExercises01.exe
+C:\Users\ailto\Documents\Programação\C#\Exercícios\ConsoleExercises01\ConsoleExercises01\obj\Debug\ConsoleExercises01.pdb

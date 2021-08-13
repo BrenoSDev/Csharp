@@ -1,0 +1,11 @@
+WebForms Start
+
+O inicio do Asp.Net são os Webforms. O Conceito de webforms é muito simples, são formularios web baseados na interação com o cliente, onde o mesmo pode entrar
+informações e submetê-las para o servidor, afim de obter um resultado ou gravar dados em uma base.
+Os arquivos Webforms vão ficar divididos em tres arquivos distintos, o .aspx, .cs e . designer. Cada um deles é feito para uma função especifica, o .aspx por
+exemplo é para conter apenas elementos de formação html, controles e recursos de input. O .cs, é chamado de code behind, é onde vamos colocar nosso codigo.
+Você verá que em .Net existe um forte conceito de orientação a objetos, o que vai forçar você a estruturar seus projetos em camadas e seguir padrões de boas
+praticas para desenvolvimento.
+Dentro do codigo c#, você pode trabalhar com eventos do   formulário, que vão desde um clique de botão até a entrada de um texto em um controle do tipo input
+text. Um dos eventos principais é o Page_Load, ele é executado sempre que que algum comando do usuário for disparado. Portanto, ao carregar o formulario
+nós temos um evento de Page_Load em execução.
