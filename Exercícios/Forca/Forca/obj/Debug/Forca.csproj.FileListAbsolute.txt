@@ -1,0 +1,10 @@
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\bin\Debug\Forca.exe.config
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\bin\Debug\Forca.exe
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\bin\Debug\Forca.pdb
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\obj\Debug\Forca.csproj.AssemblyReference.cache
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\obj\Debug\Forca.Form1.resources
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\obj\Debug\Forca.Properties.Resources.resources
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\obj\Debug\Forca.csproj.GenerateResource.cache
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\obj\Debug\Forca.csproj.CoreCompileInputs.cache
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\obj\Debug\Forca.exe
+C:\Users\ailto\Documents\Programação\C#\Exercícios\Forca\Forca\obj\Debug\Forca.pdb
